@@ -2,6 +2,7 @@ import React from 'react';
 import { View, TouchableWithoutFeedback, Text, FlatList } from 'react-native';
 import { Styles } from '../styles/index';
 
+// Prop Types
 interface Props {
     categories: object[],
     navigation: any

@@ -19,12 +19,13 @@ export const LINE_HEIGHT_24 = scaleFont(24);
 export const LINE_HEIGHT_20 = scaleFont(20);
 export const LINE_HEIGHT_16 = scaleFont(16);
 
-// FONT STYLE
+// FONT REGULAR STYLE
 export const FONT_REGULAR = {
     fontFamily: FONT_FAMILY_REGULAR,
     fontWeight: FONT_WEIGHT_REGULAR,
 };
 
+// FONT BOLD STYLE
 export const FONT_BOLD = {
     fontFamily: FONT_FAMILY_BOLD,
     fontWeight: FONT_WEIGHT_BOLD,

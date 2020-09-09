@@ -1,5 +1,6 @@
 import * as types from './categoryTypes';
 
+// Initial State
 const INITIAL_STATE: types.CategoryState = {
   categories: []
 };

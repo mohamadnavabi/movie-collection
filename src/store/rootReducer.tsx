@@ -14,6 +14,7 @@ const persistConfig = {
   whitelist: ['user']
 }
 
+// Combine all reducers
 const rootReducer = combineReducers({
   user: userReducer,
   movie: movieReducer,

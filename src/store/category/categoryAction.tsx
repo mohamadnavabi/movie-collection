@@ -1,6 +1,7 @@
 import * as types from './categoryTypes';
 import { getCategories } from '../../api/methods/categories';
 
+// Get All Categories Action
 export const fetchCategories = (token: string) => {
     return (dispatch) => {
         return getCategories(token).then(res => {

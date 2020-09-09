@@ -7,6 +7,7 @@ interface Props {
 }
 
 function MovieGrid({ movies }: Props) {
+    // render FlatList Items
     const _renderItem = ({ item }) => (
         <View style={Styles.gridView}>
             <View style={[Styles.flexRowSpaceBetween, Styles.flexWrap]}>

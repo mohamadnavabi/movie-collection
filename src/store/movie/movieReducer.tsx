@@ -1,5 +1,6 @@
 import * as types from './movieTypes';
 
+// Initial State
 const INITIAL_STATE: types.MovieState = {
   movies: [],
   categoryMovies: [],

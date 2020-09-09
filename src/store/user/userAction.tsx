@@ -1,7 +1,8 @@
 import * as types from './userTypes';
 import { loginUser } from '../../api/methods/user';
 
-export const login = (username, password) => {
+// User Authentication Action
+export const login = (username: string, password: string) => {
     return (dispatch) => {
         return loginUser(username, password).then(res => {
             dispatch({

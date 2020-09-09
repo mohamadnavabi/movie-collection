@@ -14,6 +14,7 @@ interface Props {
 const Search = (props: Props) => {
   return (
     <View>
+      {/* Search Input Wrapper */}
       <View style={styles.searchWrapper}>
         <SearchSVG stroke={Colors.GRAY_MEDIUM} style={styles.iconContainer} />
         <TextInput
@@ -23,12 +24,13 @@ const Search = (props: Props) => {
           placeholder='Enter Your Username'
         />
       </View>
+
+      {/* Search Result Wrapper */}
       {
         (Object.keys(props.searchedMovie).length && props.searchedMovie.results.length) ?
           <View style={styles.searchResult}>
             {props.searchedMovie.results.map(movie => <Text key={movie.id} style={Styles.regularText}>{movie.title}</Text>)}
           </View>
-
           :
           null
       }

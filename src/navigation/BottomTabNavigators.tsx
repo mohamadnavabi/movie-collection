@@ -7,14 +7,15 @@ import { HomeSVG, GridSVG, MovieSVG } from '../assets/icons/index';
 import Home from '../screens/Home';
 import StackNavigators from './StackNavigators';
 
+// Bottom Tab Navigator Types
 type BottomTabNavigatorsList = {
     Home: undefined;
     CategoriesList: undefined;
-    CategoryMovies: undefined;
 }
 
 const BottomTab = createBottomTabNavigator<BottomTabNavigatorsList>();
 
+// Bottom Tab Navigators
 function BottomTabNavigators() {
     return (
         <BottomTab.Navigator

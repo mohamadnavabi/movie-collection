@@ -11,6 +11,7 @@ import Login from '../screens/Login';
 import BottomTabNavigators from './BottomTabNavigators';
 
 
+// Custom Navigation Container Theme
 const customTheme = {
     ...DefaultTheme,
     backgroundColor: 'red',
@@ -28,6 +29,7 @@ function RootNavigator({ auth }) {
         <NavigationContainer theme={customTheme}>
             <Stack.Navigator headerMode='none'>
                 {
+                    // Check that the user is logged in
                     auth.hasOwnProperty('token') ?
                         <Stack.Screen name="Home" component={BottomTabNavigators} />
                         :

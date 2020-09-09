@@ -1,5 +1,6 @@
 import Constants from './Constants';
 
+// Base API function
 export default function api(path: string, params: object | null, method: string, token: string | null) {
   let options;
 

@@ -1,5 +1,6 @@
 import * as types from './userTypes';
 
+// Initial State
 const INITIAL_STATE: types.UserState = {
   auth: {}
 };

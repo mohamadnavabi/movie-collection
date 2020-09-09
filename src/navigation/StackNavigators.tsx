@@ -7,6 +7,7 @@ import CategoryMovies from '../screens/CategoryMovies';
 
 const Stack = createStackNavigator();
 
+// Stack Navigators
 function StackNavigators() {
     return (
         <Stack.Navigator>

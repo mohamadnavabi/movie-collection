@@ -6,6 +6,7 @@ import { selectCategories } from '../store/category/categorySelectors';
 import { fetchCategories } from '../store/category/categoryAction';
 import CategoryList from '../components/CategoryList';
 
+// Prop Types
 interface Props {
     getCategories: any,
     auth: any,

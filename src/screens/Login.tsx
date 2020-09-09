@@ -7,7 +7,7 @@ import { login } from '../store/user/userAction';
 import Button from '../components/Button';
 import notify from '../utils/notify';
 
-
+// State Types
 interface State {
     username: String,
     password: String,
@@ -21,14 +21,17 @@ class Login extends Component<State> {
         loading: false
     }
 
+    // Username Change Text Trigger
     usernameChangeText = (username: String) => {
         this.setState({ username });
     }
 
+    // Password Change Text Trigger
     passwordChangeText = (password: String) => {
         this.setState({ password });
     }
 
+    // Submit Login
     submit = async () => {
         const { username, password } = this.state;
 
@@ -47,6 +50,7 @@ class Login extends Component<State> {
 
         return (
             <SafeAreaView style={[Styles.container, Styles.justifyContentCenter]}>
+                {/* Initialize Status bar */}
                 <StatusBar barStyle='dark-content' backgroundColor='#fff' />
 
                 {/* UserName Input */}

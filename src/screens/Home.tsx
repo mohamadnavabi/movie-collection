@@ -10,6 +10,7 @@ import MovieCarousel from '../components/MovieCarousel';
 import { Styles } from '../styles/index';
 import { ScrollView } from 'react-native-gesture-handler';
 
+// Prop Types
 interface Props {
     search: any,
     searchMovies: any,
@@ -30,6 +31,7 @@ const Home = (props: Props) => {
 
     return (
         <SafeAreaView style={Styles.container}>
+            {/* Search Box */}
             <Search onChangeText={(text: string) => searchChangedText(text)} />
 
             <ScrollView style={Styles.container}>

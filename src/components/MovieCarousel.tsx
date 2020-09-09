@@ -2,13 +2,16 @@ import React from 'react';
 import { View, Text, FlatList } from 'react-native';
 import { Styles } from '../styles/index';
 
+// Prop Types
 interface Props {
     title: string,
     movies: object[]
 }
 
+// Movie Horizontal Carousel
 function MovieCarousel({ title, movies }: Props) {
 
+    // Render List Items
     const _renderItem = ({ item }) => (
         <View style={Styles.horizontalListItem}>
             <View style={[Styles.flexRowSpaceBetween, Styles.flexWrap]}>

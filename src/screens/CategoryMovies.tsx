@@ -8,6 +8,7 @@ import { fetchMovieWithCategory, clearCategoryMovies } from '../store/movie/movi
 import { Styles } from '../styles/index';
 import GridList from '../components/MovieGrid';
 
+// Prop Types
 interface Props {
     getMovieWithCategory: any,
     clearCategoryMovies: any,

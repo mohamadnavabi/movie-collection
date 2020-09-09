@@ -1,7 +1,6 @@
 import * as types from './movieTypes';
 import { getMovies, getMovieWithCategory, searchMovie } from '../../api/methods/movies';
 
-
 export const fetchMovies = (token: string) => {
     return (dispatch) => {
         return getMovies(token).then(res => {
