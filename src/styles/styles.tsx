@@ -75,13 +75,13 @@ const Styles = StyleSheet.create({
         margin: 5
     },
     margin15: {
-        margin: 50
+        margin: 15
     },
     padding5: {
         margin: 5
     },
     padding15: {
-        margin: 50
+        margin: 15
     },
     listTitle: {
         ...Typography.FONT_BOLD,

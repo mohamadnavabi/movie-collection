@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Text, TextInput } from 'react-native';
+import { StyleSheet, View, ScrollView, Text, TextInput } from 'react-native';
 import { connect } from 'react-redux';
 import { selectSearchedMovie } from '../store/movie/movieSelectors';
 import SearchSVG from '../assets/icons/SearchSVG';
-import { Mixins, Colors, Styles } from '../styles/index';
+import { Mixins, Colors, Typography } from '../styles/index';
 
 interface Props {
   onChangeText: any;
@@ -28,9 +28,9 @@ const Search = (props: Props) => {
       {/* Search Result Wrapper */}
       {
         (Object.keys(props.searchedMovie).length && props.searchedMovie.results.length) ?
-          <View style={styles.searchResult}>
-            {props.searchedMovie.results.map(movie => <Text key={movie.id} style={Styles.regularText}>{movie.title}</Text>)}
-          </View>
+          <ScrollView style={styles.searchResult}>
+            {props.searchedMovie.results.map(movie => <Text key={movie.id} style={styles.searchText}>{movie.title}</Text>)}
+          </ScrollView>
           :
           null
       }
@@ -55,16 +55,25 @@ const styles = StyleSheet.create({
   },
   searchResult: {
     position: 'absolute',
+    top: 70,
+    right: 0,
+    left: 0,
     maxHeight: 200,
     padding: 5,
     marginHorizontal: 15,
-    top: 70,
     backgroundColor: Colors.WHITE,
+    borderTopColor: Colors.PRIMARY,
+    borderTopWidth: 1,
     ...Mixins.boxShadow('rgba(0, 0, 0, 0.01)', { height: 1, width: 1 }, 4),
-    overflow: 'hidden'
+    zIndex: 1
   },
   iconContainer: {
     paddingLeft: 45
+  },
+  searchText: {
+    ...Typography.FONT_REGULAR,
+    paddingVertical: 5,
+    color: Colors.GRAY_DARK
   }
 })
 

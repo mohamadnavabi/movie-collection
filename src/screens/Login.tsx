@@ -32,7 +32,7 @@ class Login extends Component<State> {
     }
 
     // Submit Login
-    submit = async () => {
+    submit = () => {
         const { username, password } = this.state;
 
         // Check that the username and password are not empty
@@ -49,7 +49,7 @@ class Login extends Component<State> {
         const { username, password } = this.state;
 
         return (
-            <SafeAreaView style={[Styles.container, Styles.justifyContentCenter]}>
+            <SafeAreaView style={[Styles.container, Styles.justifyContentCenter, Styles.padding15]}>
                 {/* Initialize Status bar */}
                 <StatusBar barStyle='dark-content' backgroundColor='#fff' />
 
