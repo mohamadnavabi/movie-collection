@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, ScrollView, Text, TextInput } from 'react-native';
 import { connect } from 'react-redux';
-import { selectSearchedMovie } from '../store/movie/movieSelectors';
+import { selectSearchedMovie } from '../store/movie/movie.selectors';
 import SearchSVG from '../assets/icons/SearchSVG';
 import { Mixins, Colors, Typography } from '../styles/index';
 

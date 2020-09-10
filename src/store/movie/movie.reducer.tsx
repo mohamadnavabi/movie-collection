@@ -1,4 +1,4 @@
-import * as types from './movieTypes';
+import * as types from './movie.types';
 
 // Initial State
 const INITIAL_STATE: types.MovieState = {

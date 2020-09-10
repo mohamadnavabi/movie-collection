@@ -1,4 +1,4 @@
-import * as types from './userTypes';
+import * as types from './user.types';
 import { loginUser } from '../../api/methods/user';
 import notify from '../../utils/notify';
 

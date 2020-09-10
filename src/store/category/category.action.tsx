@@ -1,4 +1,4 @@
-import * as types from './categoryTypes';
+import * as types from './category.types';
 import { getCategories } from '../../api/methods/categories';
 
 // Get All Categories Action

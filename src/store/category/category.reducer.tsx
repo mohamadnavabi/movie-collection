@@ -1,16 +1,16 @@
-import * as types from './userTypes';
+import * as types from './category.types';
 
 // Initial State
-const INITIAL_STATE: types.UserState = {
-  auth: {}
+const INITIAL_STATE: types.CategoryState = {
+  categories: []
 };
 
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case types.SET_USER:
+    case types.SET_CATEGORIES:
       return {
         ...state,
-        auth: action.payload
+        categories: action.payload
       }
     default:
       return state;

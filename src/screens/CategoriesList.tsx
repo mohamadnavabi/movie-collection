@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { selectUserAuth } from '../store/user/userSelectors';
-import { selectCategories } from '../store/category/categorySelectors';
-import { fetchCategories } from '../store/category/categoryAction';
+import { selectUserAuth } from '../store/user/user.selectors';
+import { selectCategories } from '../store/category/category.selectors';
+import { fetchCategories } from '../store/category/category.action';
 import CategoryList from '../components/CategoryList';
 
 // Prop Types

@@ -5,7 +5,7 @@ import { HomeSVG, GridSVG, MovieSVG } from '../assets/icons/index';
 
 // Screens
 import Home from '../screens/Home';
-import StackNavigators from './StackNavigators';
+import CategoryStack from './stacks/CategoryStack';
 
 // Bottom Tab Navigator Types
 type BottomTabNavigatorsList = {
@@ -36,7 +36,7 @@ function BottomTabNavigators() {
             />
             <BottomTab.Screen
                 name="CategoriesList"
-                component={StackNavigators}
+                component={CategoryStack}
                 options={{
                     tabBarLabel: 'Categories',
                     tabBarIcon: ({ color, size }) => (

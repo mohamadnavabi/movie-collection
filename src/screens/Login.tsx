@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { SafeAreaView, Text, StatusBar, TextInput, TouchableHighlight, ActivityIndicator } from 'react-native';
 import { Styles, Colors } from '../styles/index';
 import { connect } from 'react-redux';
-import { login } from '../store/user/userAction';
+import { login } from '../store/user/user.action';
 import Button from '../components/Button';
 import notify from '../utils/notify';
 

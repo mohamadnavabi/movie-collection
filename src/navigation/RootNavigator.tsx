@@ -3,7 +3,7 @@ import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { selectUserAuth } from '../store/user/userSelectors';
+import { selectUserAuth } from '../store/user/user.selectors';
 import { Colors } from '../styles/index';
 
 // Routes

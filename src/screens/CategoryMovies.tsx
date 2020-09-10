@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { SafeAreaView } from 'react-native';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { selectUserAuth } from '../store/user/userSelectors';
-import { selectCategoryMovies } from '../store/movie/movieSelectors';
-import { fetchMovieWithCategory, clearCategoryMovies } from '../store/movie/movieAction';
+import { selectUserAuth } from '../store/user/user.selectors';
+import { selectCategoryMovies } from '../store/movie/movie.selectors';
+import { fetchMovieWithCategory, clearCategoryMovies } from '../store/movie/movie.action';
 import { Styles } from '../styles/index';
 import GridList from '../components/MovieGrid';
 

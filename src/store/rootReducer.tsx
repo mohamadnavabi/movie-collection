@@ -3,9 +3,9 @@ import AsyncStorage from '@react-native-community/async-storage';
 import { persistReducer } from 'redux-persist';
 
 // Reducers
-import userReducer from './user/userReducer';
-import movieReducer from './movie/movieReducer';
-import categoryReducer from './category/categoryReducer';
+import userReducer from './user/user.reducer';
+import movieReducer from './movie/movie.reducer';
+import categoryReducer from './category/category.reducer';
 
 // Set Persist Configs
 const persistConfig = {
