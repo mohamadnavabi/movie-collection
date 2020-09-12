@@ -46,13 +46,20 @@ const Styles = StyleSheet.create({
         padding: 10,
         borderRadius: 10,
         textAlign: 'center',
-        textAlignVertical: 'center'
+        textAlignVertical: 'center',
+        overflow: 'hidden'
     },
     textInput: {
         backgroundColor: Colors.GRAY_LIGHT,
         marginBottom: 15,
         paddingHorizontal: 10,
-        borderRadius: 10
+        borderRadius: 10,
+        overflow: 'hidden',
+        ...Platform.select({
+            ios: {
+                paddingVertical: 15,
+            }
+        })
     },
     regularText: {
         ...Typography.FONT_REGULAR,
@@ -97,7 +104,8 @@ const Styles = StyleSheet.create({
         height: 100,
         borderRadius: 10,
         ...Mixins.boxShadow('rgba(0, 0, 0, 0.1)', { height: 1, width: 1 }, 5),
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        overflow: 'hidden'
     },
     listView: {
         padding: 15,
