@@ -7,20 +7,18 @@ import { Mixins, Colors, Typography } from '../styles/index';
 
 interface Props {
   onChangeText: any;
-  searchText: string,
   searchedMovie: object[]
 }
 
 const Search = (props: Props) => {
   return (
-    <View>
+    <View style={styles.container}>
       {/* Search Input Wrapper */}
       <View style={styles.searchWrapper}>
         <SearchSVG stroke={Colors.GRAY_MEDIUM} style={styles.iconContainer} />
         <TextInput
           style={styles.searchInput}
           onChangeText={text => props.onChangeText(text)}
-          value={props.searchText}
           placeholder='Enter Your Username'
         />
       </View>
@@ -39,6 +37,14 @@ const Search = (props: Props) => {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    position: 'relative',
+    top: 15,
+    left: 0,
+    right: 0,
+    zIndex: 2,
+    marginBottom: 15
+  },
   searchWrapper: {
     position: 'relative',
     flexDirection: 'row',
@@ -48,6 +54,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 15,
     height: 50,
     marginTop: 25,
+    borderWidth: 1,
+    borderColor: '#ccc',
     ...Mixins.boxShadow('rgba(0, 0, 0, 0.01)', { height: 1, width: 1 }, 4)
   },
   searchInput: {
@@ -65,7 +73,7 @@ const styles = StyleSheet.create({
     borderTopColor: Colors.PRIMARY,
     borderTopWidth: 1,
     ...Mixins.boxShadow('rgba(0, 0, 0, 0.01)', { height: 1, width: 1 }, 4),
-    zIndex: 1
+    zIndex: 2
   },
   iconContainer: {
     paddingLeft: 45
